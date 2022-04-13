@@ -4,6 +4,9 @@ const cactus = document.getElementById('cactus');
 document.addEventListener("keydown", function(event) {
     jump()
 });
+document.addEventListener("toustart", function(event) {
+    jump()
+});
 //Добавление класса jump к кенгуру
 function jump () {
     if(kangaroo.classList != "jump") {
@@ -18,7 +21,7 @@ let isAlive = setInterval ( function () {
     let kangarooTop = parseInt(window.getComputedStyle(kangaroo).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
-    if(cactusLeft < 50 && cactusLeft > 0 && kangarooTop >= 240) {
-        alert('GAME OVER!!!');
-    }
+    // if(cactusLeft < 50 && cactusLeft > 0 && kangarooTop >= 240) {
+    //     alert('GAME OVER!!!');
+    // }
 }, 10);
