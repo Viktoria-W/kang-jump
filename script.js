@@ -21,7 +21,7 @@ let isAlive = setInterval ( function () {
     let kangarooTop = parseInt(window.getComputedStyle(kangaroo).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
-    // if(cactusLeft < 50 && cactusLeft > 0 && kangarooTop >= 240) {
-    //     alert('GAME OVER!!!');
-    // }
+    if(cactusLeft < 50 && cactusLeft > 0 && kangarooTop >= 240) {
+        alert('GAME OVER!!!');
+    }
 }, 10);
