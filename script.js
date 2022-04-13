@@ -4,7 +4,7 @@ const cactus = document.getElementById('cactus');
 document.addEventListener("keydown", function(event) {
     jump()
 });
-document.addEventListener("touchstart", function(event) {
+document.addEventListener("touchend", function(event) {
     jump()
 });
 //Добавление класса jump к кенгуру
