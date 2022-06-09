@@ -91,7 +91,7 @@ html,body{
     width: 600px;
     height: 300px;
     background-color: #f7c23b77;
-    background-image: url("img/bgr.jpg");
+    background-image: url("../img/bgr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
